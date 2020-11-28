@@ -1,14 +1,14 @@
 Config                            = {}
 Config.DrawDistance               = 100.0
 Config.MarkerColor                = { r = 120, g = 120, b = 240 }
-Config.EnablePlayerManagement     = false -- enables the actual car dealer job. You'll need esx_addonaccount, esx_billing and esx_society
+Config.EnablePlayerManagement     = false -- ativa o trabalho com tag - esx_addonaccount necessario, esx_billing necessario e esx_society necessario
 Config.EnableOwnedVehicles        = true
-Config.EnableSocietyOwnedVehicles = false -- use with EnablePlayerManagement disabled, or else it wont have any effects
+Config.EnableSocietyOwnedVehicles = false -- usem com EnablePlayerManagement desativado, ou então não vai fazer efeito
 Config.ResellPercentage           = 65
 Config.Locale                     = 'pt'
 
--- looks like this: 'LLL NNN'
--- The maximum plate length is 8 chars (including spaces & symbols), don't go past it!
+-- Do genero: 'LLL NNN'
+-- O numero maxido matricula é 8 caracaters (incluindo espaços & simbolos), não passem disso!
 Config.PlateLetters  = 4
 Config.PlateNumbers  = 4
 Config.PlateUseSpace = false
@@ -35,7 +35,7 @@ Config.Zones = {
 		Type    = -1,
 	},
 
-	BossActions = { -- nao funciona
+	BossActions = { -- não funciona sem o " Config.EnablePlayerManagement " ativado.
 		Pos   = { x = -31240.1, y = -3001.81, z = -43.87 },
 		Size  = { x = 1.5, y = 1.5, z = 1.0 },
 		Type  = -1,
